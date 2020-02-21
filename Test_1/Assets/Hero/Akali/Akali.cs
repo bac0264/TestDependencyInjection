@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Nami : Hero
+public class Akali : Hero
 {
-    public override DataHero BASE { 
-        get => base.BASE; 
-        set {
+    public override DataHero BASE
+    {
+        get => base.BASE;
+        set
+        {
             base.BASE = value;
-        } 
+        }
     }
     public override void LateUpdate()
     {
@@ -19,11 +21,11 @@ public class Nami : Hero
     }
     public override void SetupInterface()
     {
-        HeroMove = DIContainer.GetModule<INamiMoveManager>();
+        HeroMove = DIContainer.GetModule<IAkaliMoveManager>();
         base.SetupInterface();
     }
     public override void HeroDisplay()
     {
-        Debug.Log("Nami");
+        Debug.Log("Akali");
     }
-} 
+}

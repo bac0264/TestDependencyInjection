@@ -48,4 +48,8 @@ public class Hero : MonoBehaviour
     {
         if (HeroMove != null) HeroMove.BASE = BASE;
     }
+    public virtual void HeroDisplay()
+    {
+        Debug.Log("Hero default");
+    }
 }
